@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "BallonsTranslator-lite"
 version = "0.6.0"
 description = "漫画/图片翻译工具 — 文字检测 → OCR → 翻译 → 图像修复 → 文字渲染"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
   "colorama",
   "einops",
@@ -18,7 +18,7 @@ dependencies = [
   "opencc-python-reimplemented",
   "opencv-python>=4.10.0.84; sys_platform == 'win32' or sys_platform == 'linux'",
   "packaging>=23.0",
-  "pillow>=10.0,<11",
+  "pillow>=13.0.0,<14",
   "pillow-jxl-plugin>=1.3.4",
   "py7zr",
   "pyclipper",
