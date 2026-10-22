@@ -4,6 +4,12 @@ import os.path as osp
 import subprocess
 import sys
 from pathlib import Path
+
+if sys.version_info < (3, 11):
+    raise SystemExit(
+        "BallonsTranslator-lite requires Python 3.11+ because Pillow 13+ "
+        "contains critical security fixes. Please upgrade Python before launching."
+    )
 from platform import platform
 
 PATH_ROOT = Path(__file__).parent
